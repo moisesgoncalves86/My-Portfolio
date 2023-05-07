@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;1,200;1,500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b1380c07ef.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" alt="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header" onclick="closemenu()">Home</a></li>
+                    <li><a href="#about" onclick="closemenu()">About</a></li>
+                    <li><a href="#projects" onclick="closemenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="closemenu()">Contacts</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>&lt;Júnior FullStack Developer&gt;</p>
+                <h1>Hi, I am <span>Moisés</span></h1>
+            </div>
+        </div>
+    </div>
+    <!-- ---------about--------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Hello! My name is Moisés and I'm a technology and sports enthusiast. When I'm not cycling or watching a Formula 1 race, you can find me challenging my mind with a game of chess or immersed in a good movie.
+
+                        Recently, I discovered my passion for programming and completed a 14-week intensive bootcamp in &lt;Academia de Código_&gt; to become a FullStack Developer. I'm excited to start my career in IT and apply the skills I learned to create innovative and impactful solutions.
+                        
+                        If you're looking for a passionate, creative, and committed developer, I'm ready to take on new challenges and contribute to your team's success. Let's work together!
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links activ-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents activ-tab" id="skills">
+                        <ul>
+                            <li><span>Java</span></li>
+                            <li><span>Javascript</span></li>
+                            <li><span>HTML</span></li>
+                            <li><span>CSS</span></li>
+                            <li><span>REST APIs</span></li>
+                            <li><span>Tomcat</span></li>
+                            <li><span>Git</span></li>
+                            <li><span>SQL</span></li>
+                            <li><span>Bootstrap</span></li>
+                            <li><span>Web development</span></li>
+                            <li><span>Spring framework</span></li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Pastelaria South África</span ><br>2017-2020 -> Waiter</li>
+                            <li><span>Café Meia Noite</span><br>2014-2016 -> Waiter</li>
+                            <li><span>Escala Padrão</span><br>2007-2013 -> Carpenter</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>&lt;Academia de Código_&gt;</span><br>A 14-Week Intensive && Immersive Full Stack Programming Bootcamp</li>
+                            <li><span>Qualidade de Basto</span><br>High School Diploma</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------------------projects-------------------------->
+
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1> 
+            <div class="projects-list">
+                <div>
+                    
+                    <h2>RunPoorCadet <i class="fa-brands fa-java"></i></h2>
+                    <p>Game-week &lt;Academia de Código_&gt;</p>
+                    <img src="images/run-poor-cadet.png">
+                    <a href="https://github.com/moisesgoncalves86/RunPoorCadet">Learn more</a>
+                </div>
+                <div>
+                    
+                    <h2>Map-Editor <i class="fa-solid fa-palette"></i></h2>
+                    <p>Project &lt;Academia de Código_&gt;</p>
+                    <img src="images/map-editor.png">
+                    <a href="https://github.com/moisesgoncalves86/MapEditor">Learn more</a>
+                </div>
+                <div>
+                    
+                    <h2>TCP-Chat-Server <i class="fa-sharp fa-solid fa-comments"></i></h2>
+                    <p>Project &lt;Academia de Código_&gt;</p>
+                    <img src="images/tcp-chat.png">
+                    <a href="https://github.com/moisesgoncalves86/Tcp-Chat-Server">Learn more</a>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <!-------------------------------------------contact--------------------------------------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> moisesgoncalves1986@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> +351916762102</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/moises-goncalves-dev/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/moisesgoncalves86"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <img src="images/contact.png">
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script> 
+    <script src="side-menu.js"></script> 
+</body>
+
+</html>
