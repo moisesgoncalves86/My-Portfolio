@@ -417,7 +417,10 @@ nav .fa-solid {
 
     #projects {
         padding: 155px 0;
+    }
 
+    .projects-list {
+        grid-template-columns: 1fr; /* Display one project per row on smaller screens */
     }
 
     .contact-left,
@@ -428,5 +431,4 @@ nav .fa-solid {
     .contact-right {
         flex-basis: 100%;
     }
-
 }
